@@ -1,0 +1,313 @@
+/* -------------------
+   RESET + GLOBAL
+------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #ff4b2b;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+/* -------------------
+   NAVBAR
+------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff4b2b;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  font-weight: 500;
+  padding: 0.5rem 0.8rem;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #fff;
+  background: #ff4b2b;
+  border-radius: 6px;
+}
+
+.nav-icons a {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+/* -------------------
+   HERO (HOME)
+------------------- */
+.hero {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('https://i.pinimg.com/1200x/2d/ee/d1/2deed1b361c7bbe9b8eff28e2d2ca99f.jpg') center/cover no-repeat;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.4);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+  background: #ff4b2b;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.hero .btn:hover {
+  background: #333;
+}
+
+/* -------------------
+   SHOP + PRODUCTS
+------------------- */
+.shop, .products, .cart, .checkout, .thankyou, .about, .blog, .contact, .auth, .privacy {
+  padding: 4rem 5%;
+}
+
+.shop h1, .about h1, .blog h1, .contact h1,
+.cart h1, .checkout h1, .thankyou h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 400px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  color: #ff4b2b;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff4b2b;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+/* -------------------
+   CART + TABLE
+------------------- */
+.cart table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.cart table th, .cart table td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+}
+
+.cart-total {
+  text-align: right;
+}
+
+.cart-total p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* -------------------
+   CHECKOUT FORM
+------------------- */
+.checkout form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* -------------------
+   THANK YOU
+------------------- */
+.thankyou {
+  text-align: center;
+}
+
+.thankyou p {
+  margin: 1rem 0;
+}
+
+/* -------------------
+   BLOG
+------------------- */
+.blog article {
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.blog article:hover {
+  transform: translateY(-5px);
+}
+
+/* -------------------
+   CONTACT
+------------------- */
+.contact form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact .form-group textarea {
+  height: 120px;
+}
+
+/* -------------------
+   LOGIN / REGISTER
+------------------- */
+.auth form {
+  max-width: 400px;
+  margin: auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+/* -------------------
+   FOOTER
+------------------- */
+.footer {
+  background: #111;
+  color: #ccc;
+  padding: 2rem 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.footer h4 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 0.6rem;
+}
+
+.footer ul li a {
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #ff4b2b;
+}
