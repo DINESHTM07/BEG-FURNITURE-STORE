@@ -130,9 +130,6 @@ h1, h2, h3 {
 }
 
 .product-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   background: #fff;
   padding: 1rem;
   border-radius: 10px;
